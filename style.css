@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* navtop */
+.navtop {
+  background-color: #000000;
+  padding: 0 7.5rem;
+}
+header {
+  height: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.left {
+  color: whitesmoke;
+  font-weight: 300;
+}
+/* progress__bar */
+.progress__bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  counter-reset: step;
+}
+.progress__bar:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #dcdcdc;
+}
+.progress__step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 40px;
+  color: #dcdcdc;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.progress__step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+.progress__step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+/* main__section */
+.main__section {
+  display: grid;
+  grid-template-columns: 36.875rem 1fr;
+}
+.card__section {
+}
+.info__section {
+  background-color: #f8f8f8;
+  padding: 3.125rem 3.125rem 3.125rem 2.375rem;
+}
+.types__conditons {
+}
+.bold {
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Poppins";
+  text-align: center;
+  line-height: 40px;
+  padding-left: 20px;
+}
+.lighter {
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+.btn {
+  height: 3.75rem;
+  width: 100%;
+  background: #000000;
+  color: #dcdcdc;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Poppins";
+  border: none;
+}
