@@ -3,28 +3,79 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* navtop */
-.navtop {
-  background-color: #000000;
-  padding: 0 7.5rem;
+:root {
+  --bg-color: black;
+  --text-color: #dcdcdc;
+  --bg-pure: white;
 }
-header {
-  height: 120px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+body {
+  font-family: "Poppins";
+}
+input[name="flexRadioDefault"] {
+  accent-color: green;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  background-color: gray;
+  cursor: pointer;
+}
+.bg {
+  background-color: #dcdcdc;
+}
+.form-group {
+  margin: 3.125rem 0;
+}
+
+.form-check {
+  display: flex;
   align-items: center;
 }
-.left {
-  color: whitesmoke;
-  font-weight: 300;
+
+.design {
+  color: red;
+}
+.row1 {
+  background-color: var(--bg-color);
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg__black {
+  background-color: #000000;
+}
+form {
+  padding-top: 50px;
+  background-color: #dcdcdc;
+}
+.btn {
+  width: 100%;
+  background-color: #000000;
+  color: #dcdcdc;
+  cursor: pointer;
+}
+
+.col__img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+.col__img img {
+  width: 100%;
+  height: 100%;
+}
+.height {
+  height: 90px;
 }
 /* progress__bar */
 .progress__bar {
   position: relative;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   counter-reset: step;
+  margin: 1.125rem;
 }
 .progress__bar:before {
   content: "";
@@ -38,7 +89,7 @@ header {
 .progress__step::after {
   content: attr(data-title);
   position: absolute;
-  top: 40px;
+  top: 50px;
   color: #dcdcdc;
   text-transform: uppercase;
   font-weight: 600;
@@ -58,42 +109,29 @@ header {
   justify-content: center;
   z-index: 1;
 }
-/* main__section */
-.main__section {
-  display: grid;
-  grid-template-columns: 36.875rem 1fr;
-}
-.card__section {
-}
-.info__section {
-  background-color: #f8f8f8;
-  padding: 3.125rem 3.125rem 3.125rem 2.375rem;
-}
-.types__conditons {
-}
-.bold {
-  font-size: 22px;
-  letter-spacing: 0px;
+.h4 {
   color: #000000;
   font-weight: 600;
   font-family: "Poppins";
   text-align: center;
-  line-height: 40px;
-  padding-left: 20px;
 }
-.lighter {
-  font-size: 18px;
-  letter-spacing: 0px;
-  font-family: "Poppins";
-  font-weight: 300;
-}
-.btn {
-  height: 3.75rem;
-  width: 100%;
-  background: #000000;
-  color: #dcdcdc;
+.form-group .h3 {
+  color: #000000;
   font-weight: 600;
-  font-size: 22px;
   font-family: "Poppins";
-  border: none;
+  font-size: 22px;
+}
+.form-check .h4 {
+  font-size: 1.25rem;
+}
+.bold {
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .progress__bar {
+    background-color: red;
+  }
 }
