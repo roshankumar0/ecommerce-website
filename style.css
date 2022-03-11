@@ -11,14 +11,19 @@
 body {
   font-family: "Poppins";
 }
+.container {
+  box-shadow: 0 0 5px gray;
+}
 input[name="flexRadioDefault"] {
   accent-color: green;
   height: 30px;
   width: 30px;
-  margin: 10px;
+  margin-right: 10px;
   background-color: gray;
   cursor: pointer;
+  opacity: 0;
 }
+
 .bg {
   background-color: #dcdcdc;
 }
@@ -29,6 +34,7 @@ input[name="flexRadioDefault"] {
 .form-check {
   display: flex;
   align-items: center;
+  line-height: 60px;
 }
 
 .design {
@@ -60,7 +66,7 @@ form {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .col__img img {
   width: 100%;
@@ -113,7 +119,6 @@ form {
   color: #000000;
   font-weight: 600;
   font-family: "Poppins";
-  text-align: center;
 }
 .form-group .h3 {
   color: #000000;
@@ -127,11 +132,20 @@ form {
 .bold {
   font-size: 20px;
 }
+.only-mobile {
+  display: none;
+}
 @media (max-width: 480px) {
   .desktop-only {
     display: none;
   }
-  .progress__bar {
-    background-color: red;
+  .only-mobile {
+    display: block;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 990px) {
+  .desktop-only {
+    display: none;
   }
 }
