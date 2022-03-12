@@ -30,8 +30,8 @@ body {
 [type="radio"]:not(:checked) + label:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0.0625rem;
+  top: 0.0625rem;
   width: 18px;
   height: 18px;
   border: 1px solid #ddd;
