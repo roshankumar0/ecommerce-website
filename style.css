@@ -8,6 +8,9 @@
   --text-color: #dcdcdc;
   --bg-pure: white;
 }
+.border1 {
+  border: 3px solid red;
+}
 body {
   font-family: "Poppins";
 }
@@ -63,9 +66,11 @@ body {
   transform: scale(1);
 }
 
-.container1 {
+.container1,
+.container2 {
   max-width: 1000px !important;
 }
+
 .design {
   color: red;
 }
@@ -84,8 +89,18 @@ body {
 .gray {
   background-color: #f8f8f8;
 }
+.silverbg {
+  background-color: #ddd;
+}
+
 .bg__black {
   background-color: #000000;
+}
+.font__size {
+  font-size: 10px;
+}
+.progress__bar .active {
+  background-color: silver;
 }
 form {
   padding-top: 50px;
@@ -123,7 +138,7 @@ form {
 .progress__step {
   width: 2.1875rem;
   height: 2.1875rem;
-  background: #dcdcdc;
+  background: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -134,6 +149,12 @@ form {
 .only-mobile {
   display: none;
 }
+/* .boxbutton {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+} */
+
 @media (max-width: 480px) {
   .desktop-only {
     display: none;
