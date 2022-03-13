@@ -141,6 +141,7 @@ form {
   .only-mobile {
     display: block;
     margin: 20px 0;
+    font-size: 20px;
   }
 }
 @media (min-width: 480px) and (max-width: 990px) {
