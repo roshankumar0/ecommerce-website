@@ -30,8 +30,8 @@ body {
 [type="radio"]:not(:checked) + label:before {
   content: "";
   position: absolute;
-  left: 0.0625rem;
-  top: 0.0625rem;
+  left: 1px;
+  top: 1px;
   width: 18px;
   height: 18px;
   border: 1px solid #ddd;
@@ -69,7 +69,8 @@ body {
 .design {
   color: red;
 }
-.h6 {
+.h6,
+.h4 {
   color: #000000;
   font-weight: 600;
 }
@@ -80,7 +81,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.gray {
+  background-color: #f8f8f8;
+}
 .bg__black {
   background-color: #000000;
 }
@@ -126,6 +129,7 @@ form {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  cursor: pointer;
 }
 .only-mobile {
   display: none;
