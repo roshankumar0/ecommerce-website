@@ -167,13 +167,14 @@ form i {
   display: none;
 }
 label span:nth-child(2),
-#FormControlTextarea1::placeholder {
+#FormControlTextarea1::placeholder,
+.price__details span {
   font-size: 0.8rem;
 }
 .active {
   background-color: gray;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .desktop-only {
     display: none;
   }
