@@ -86,6 +86,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.row button i {
+  margin: 0 4px;
+  font-size: 12px;
+}
 .gray {
   background-color: #f8f8f8;
 }
@@ -99,11 +103,21 @@ body {
 .font__size {
   font-size: 10px;
 }
-.progress__bar .active {
-  background-color: silver;
+.box {
+  border: 1px solid #000000;
+  justify-content: center;
+  align-items: center;
 }
 form {
   padding-top: 50px;
+}
+form i {
+  color: black;
+  font-size: 24px !important;
+  border: 1px solid black;
+}
+.line__height {
+  line-height: 50px;
 }
 /* progress__bar */
 .progress__bar {
@@ -146,15 +160,19 @@ form {
   z-index: 1;
   cursor: pointer;
 }
+.filename {
+  display: none;
+}
 .only-mobile {
   display: none;
 }
-/* .boxbutton {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-} */
-
+label span:nth-child(2),
+#FormControlTextarea1::placeholder {
+  font-size: 0.8rem;
+}
+.active {
+  background-color: gray;
+}
 @media (max-width: 480px) {
   .desktop-only {
     display: none;
@@ -163,10 +181,5 @@ form {
     display: block;
     margin: 20px 0;
     font-size: 20px;
-  }
-}
-@media (min-width: 480px) and (max-width: 990px) {
-  .desktop-only {
-    display: none;
   }
 }
