@@ -75,7 +75,8 @@ body {
   color: red;
 }
 .h6,
-.h4 {
+.h4,
+.h5 {
   color: #000000;
   font-weight: 600;
 }
@@ -168,7 +169,7 @@ form i {
 }
 label span:nth-child(2),
 #FormControlTextarea1::placeholder,
-.price__details span {
+span {
   font-size: 0.8rem;
 }
 .active {
