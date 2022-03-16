@@ -76,7 +76,8 @@ body {
 }
 .h6,
 .h4,
-.h5 {
+.h5,
+label {
   color: #000000;
   font-weight: 600;
 }
